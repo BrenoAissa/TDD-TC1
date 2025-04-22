@@ -20,4 +20,8 @@ class DroneDriveTest {
         assertFalse(DroneDrive.caixaPassaPelaJanela(75, 100, 50, 100, 30));
     }
 
+    @Test
+    public void testeCaixaIgualJanela() {
+        assertTrue(DroneDrive.caixaPassaPelaJanela(10, 10, 10, 10, 10));
+    }
 }
