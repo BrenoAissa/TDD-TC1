@@ -15,4 +15,9 @@ class DroneDriveTest {
         assertTrue(DroneDrive.caixaPassaPelaJanela(2, 5, 1, 5, 2), "Caixa deveria passar com janela rotacionada");
     }
 
+    @Test
+    public void CaixaNaoPassa() {
+        assertFalse(DroneDrive.caixaPassaPelaJanela(75, 100, 50, 100, 30));
+    }
+
 }
